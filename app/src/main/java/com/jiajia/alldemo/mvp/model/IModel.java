@@ -5,4 +5,6 @@ package com.jiajia.alldemo.mvp.model;
  */
 
 public interface IModel {
+    // 下载图片
+    void download();
 }
