@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jiajia.mysplash">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58aaa68107fe6539c4001ad3"
+            >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE-AECRET"
+            android:value="ddd5207c85d10dcdcdbc715a861665d9"
+            ></meta-data>
+        <!--推广的渠道-->
+      <!--  <meta-data
+            android:name="UMENG_CHANNEL"
+            ></meta-data>-->
+    </application>
+
+</manifest>

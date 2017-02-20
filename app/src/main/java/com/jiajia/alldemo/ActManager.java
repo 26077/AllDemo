@@ -14,7 +14,6 @@ import java.util.Stack;
 public class ActManager {
     private static Stack<Activity> actStack;
     private static ActManager instance;
-
     private ActManager() {
     }
 
@@ -84,6 +83,7 @@ public class ActManager {
         }
         actStack.clear();
     }
+
     /**
      * 退出应用程序，结束所有Activity
      * */
