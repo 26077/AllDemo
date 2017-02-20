@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!--TabLayout indicator-->
+    <color name="indicator_bg">#ffffff</color>
+    <color name="indicator_font_normal">#8ad9a2</color>
+    <color name="indicator_font_selected">#1ba640</color>
+
 </resources>

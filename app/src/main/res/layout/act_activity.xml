@@ -53,7 +53,7 @@
         android:id="@+id/btn_rtn_mess"/>
 
     <TextView
-        android:text="Activity 返回参数显示"
+        android:text=""
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_rtn_mess"/>

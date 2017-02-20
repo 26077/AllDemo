@@ -5,6 +5,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -66,8 +68,10 @@ public class ActTestActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent4);
                 break;
             case R.id.btn_call:
+
                 Uri url5 = Uri.parse("tel:18217179016");
-                Intent intent5 = new Intent(Intent.ACTION_VIEW,url5);
+                //Intent intent5 = new Intent(Intent.ACTION_VIEW,url5);
+                Intent intent5 = new Intent(Intent.ACTION_DIAL,url5);
                 startActivity(intent5);
                 break;
             case R.id.btn_transition:
@@ -101,5 +105,26 @@ public class ActTestActivity extends AppCompatActivity implements View.OnClickLi
             default:
                 break;
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.item_setting:
+                Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item_account:
+                Toast.makeText(this, "accountManage", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
+        }
+        return true;
     }
 }

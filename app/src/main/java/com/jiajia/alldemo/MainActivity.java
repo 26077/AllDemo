@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.jiajia.alldemo.activity.ActTestActivity;
+import com.jiajia.alldemo.fragment.ViewPagerActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void init(){
         Button btn_mvp = (Button)findViewById(R.id.btn_mvp);
         Button btn_act = (Button)findViewById(R.id.btn_act);
+        Button btn_fragment = (Button)findViewById(R.id.btn_fragment);
+        btn_fragment.setOnClickListener(this);
         btn_act.setOnClickListener(this);
     }
 
@@ -32,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_act:
                 Intent intent =new Intent(MainActivity.this, ActTestActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.btn_fragment:
+                Intent intentf =new Intent(MainActivity.this, ViewPagerActivity.class);
+                startActivity(intentf);
                 break;
             default:
                 break;
